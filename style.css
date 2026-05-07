@@ -138,87 +138,96 @@ nav a:hover::after {
   border-radius: 15px;
 }
 /*Project */
-
+/* ===== PROJECT SECTION ===== */
 #project {
-  display: block;
-  overflow: hidden;
   background-color: rgb(180, 60, 84);
   width: 100%;
+  padding: 3rem 5%;
+  box-sizing: border-box;
 }
 
-.project-container-1,
-.project-container-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 50px;
+.proj-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
 }
 
-.container-img-1,
-.container-img-2 {
-  width: 400px;
-  height: 300px;
+/* second project  */
+.proj-card--reverse {
+  direction: rtl;
+}
+.proj-card--reverse > * {
+  direction: ltr;
 }
 
-.container-img-1 img,
-.container-img-2 img {
+.proj-img-wrap {
+  border-radius: 14px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.proj-img-wrap img {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
-.project-container-1 h2,
-.project-container-2 h2 {
-  font-size: 4rem;
-  text-align: center;
+.proj-img-wrap:hover img {
+  transform: scale(1.04);
 }
 
-.container-img-1 a .button,
-.container-img-2 a .button {
-  margin: 5px 5px 0 0;
-  background-color: rgb(8, 192, 248);
-  color: rgb(7, 5, 5);
+.proj-info h2 {
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 0.4rem;
+}
+
+.proj-divider {
+  width: 50px;
+  height: 4px;
+  background: gold;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+}
+
+.proj-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.proj-info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 1.4rem;
+}
+
+.proj-info p span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.button {
   padding: 20px 40px;
-  border-radius: 15px;
-  transition: all 0.5s;
+  background-color: lightblue;
+  color: #2c2c2c;
+  border-radius: 20px;
 }
-a:hover {
-  cursor: pointer;
-}
-
-.container-img-1 a:hover .button,
-.container-img-2 a:hover .button {
-  box-shadow: 0 1px 2px 2px;
+.button:hover {
   top: -3px;
+  box-shadow: 0px 1px 2px 2px brown;
   cursor: pointer;
-}
-.description {
-  border-bottom: 6px solid gold;
-}
-.description p {
-  font-family: "roboto", sans-serif;
-  text-align: left;
-  font-weight: bolder;
-  margin-bottom: 30px;
-  padding: 40px 80px;
-  background-color: #fff;
-  font-size: 1.5rem;
-  color: gray;
-  width: 50%;
-  margin: 0 auto;
-  border-radius: 25px;
-}
-
-.description h3 {
-  margin: 0 0 20px 0;
-  text-align: left;
-  font-size: 3rem;
-  margin-left: 5%;
-}
-
-.description p span {
-  font-size: 2rem;
-  color: #000;
 }
 /*skills*/
 #skills {
@@ -361,4 +370,18 @@ a:hover {
   color: rgba(255, 255, 255, 0.35);
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
+}
+
+/* ===== BREAKPOINT MOBILE ===== */
+@media (max-width: 650px) {
+  .proj-card {
+    grid-template-columns: 1fr;
+  }
+  /* annulla il reverse su mobile: testo sempre sotto l'immagine */
+  .proj-card--reverse {
+    direction: ltr;
+  }
+  .proj-info h3 {
+    font-size: 1.3rem;
+  }
 }
