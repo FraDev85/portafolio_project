@@ -207,9 +207,94 @@
           </button>
         </div>
       </section>
-      <section id="contact"></section>
+      <section id="contact">
+        <h2>Hi, drop a message:</h2>
+        <form
+          class="contact-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          id="contactForm"
+        >
+          <!-- Replace with your Web3Forms access key from web3forms.com -->
+          <input
+            type="hidden"
+            name="access_key"
+            value="845608cd-d838-47d8-872e-474cc4d4d5cc"
+          />
+          <input
+            type="hidden"
+            name="subject"
+            value="New message from portfolio"
+          />
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://web3forms.com/success"
+          />
+
+          <div class="contact-field">
+            <label for="name">Name: </label>
+            <div class="contact-input-wrap">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="contact-field">
+            <label for="email">Email: </label>
+            <div class="contact-input-wrap">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="contact-field">
+            <label for="message">Message: </label>
+            <div class="contact-input-wrap contact-textarea-wrap">
+              <i class="fa-solid fa-message"></i>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell me about your project..."
+                rows="10"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="submit-container">
+            <button type="submit" class="contact-submit">
+              <span class="contact-submit-text">Send Message</span>
+              <i class="fa-solid fa-paper-plane contact-submit-icon"></i>
+            </button>
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="contact-botcheck"
+              tabindex="-1"
+              autocomplete="off"
+            />
+          </div>
+          <p class="contact-privacy">
+            <i class="fa-solid fa-shield-halved"></i>
+            Protected by hCaptcha — no spam, ever.
+          </p>
+          <!-- hCaptcha anti-spam -->
+        </form>
+      </section>
     </main>
-    <footer class="footer-wrapper" id="contact">
+    <footer class="footer-wrapper">
       <div class="footer-icons">
         <a
           href="https://github.com/FraDev85"
