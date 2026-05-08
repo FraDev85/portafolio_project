@@ -407,13 +407,11 @@ form {
   border-color: lightblue;
 }
 .submit-container {
-  margin-top: 3%;
-  margin-left: 18%;
-  margin-bottom: 3%;
-  align-self: self-start;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .submit-container button {
-  width: 200px;
+  width: 300px;
   height: 60px;
   background-color: #16aac4;
   border-radius: 6px;
@@ -426,7 +424,7 @@ form {
   width: 25px;
 }
 /* ===== BREAKPOINT MOBILE ===== */
-@media (max-width: 500px) {
+@media (max-width: 560px) {
   nav {
     display: flex;
     flex-direction: column;
@@ -487,7 +485,26 @@ form {
   .proj-info h3 {
     font-size: 1.3rem;
   }
+  /*Contact*/
+  #contact {
+    padding: 15px 30px;
+  }
+
+  .contact-input-wrap input,
+  .contact-input-wrap textarea {
+    width: 100%;
+  }
+
+  .submit-container button {
+    width: 100%;
+    margin: 20px;
+  }
+
+  form {
+    padding: 1rem;
+  }
 }
+
 /* ===== BREAKPOINT 4K (≥2560px) ===== */
 @media (min-width: 2160px) {
   header#main-header {
@@ -540,5 +557,30 @@ form {
   .squircle_avatar {
     width: 550px;
     height: 420px;
+  }
+  /*Contact*/
+  #contact {
+    padding: 4rem 8rem;
+  }
+
+  #contact h2 {
+    font-size: 3rem;
+  }
+
+  .contact-input-wrap input,
+  .contact-input-wrap textarea {
+    width: 700px;
+    font-size: 1.3rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .submit-container button {
+    width: 450px;
+    height: 80px;
+    font-size: 1.3rem;
+  }
+
+  form {
+    padding: 2rem 3rem;
   }
 }
