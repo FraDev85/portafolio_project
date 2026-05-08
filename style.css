@@ -139,6 +139,7 @@ nav a:hover::after {
   color: grey;
   font-size: 1.5rem;
   border-radius: 15px;
+  font-family: "roboto";
 }
 /* ===== PROJECT SECTION ===== */
 #project {
