@@ -27,272 +27,289 @@
       <a href="#contact">contact</a>
     </nav>
     <main class="main-wrapper">
-      <section id="home">
-        <svg width="0" height="0">
-          <!-- this svg is not visible but is crucial for css clip path -->
-          <defs>
-            <clipPath id="squircle" clipPathUnits="objectBoundingBox">
-              <path
-                d=" M0.5,0 C0.90,0 1,0.09 1,0.5 C1,0.91 0.9,1 0.5,1 C0.09,1 0,0.9 0,0.5 C0,0.09 0.09,0 0.5,0Z"
-                data-copy="e1.n2.e3.b4.e5.n6.e7"
-              />
-            </clipPath>
-          </defs>
-        </svg>
+      <div class="home-wrapper">
+        <section id="home">
+          <svg width="0" height="0">
+            <!-- this svg is not visible but is crucial for css clip path -->
+            <defs>
+              <clipPath id="squircle" clipPathUnits="objectBoundingBox">
+                <path
+                  d=" M0.5,0 C0.90,0 1,0.09 1,0.5 C1,0.91 0.9,1 0.5,1 C0.09,1 0,0.9 0,0.5 C0,0.09 0.09,0 0.5,0Z"
+                  data-copy="e1.n2.e3.b4.e5.n6.e7"
+                />
+              </clipPath>
+            </defs>
+          </svg>
 
-        <div class="squircle_avatar"></div>
-        <div class="text">
-          <h3>I'm Francesco Comunale</h3>
-          <h4>Front end and Web developer:</h4>
+          <div class="squircle_avatar"></div>
+          <div class="text">
+            <h3>I'm Francesco Comunale</h3>
+            <h4>Front end and Web developer:</h4>
+            <p>
+              I have a solid foundation as a web developer, with hands-on
+              experience using the full web development stack. I am comfortable
+              working with both front-end and back-end technologies and familiar
+              with modern frameworks used in real-world projects. I enjoy
+              building responsive, functional web applications and continuously
+              improving my skills through practice and learning. I also have
+              some practical experience that helps me understand how to
+              structure projects and solve problems efficiently.
+            </p>
+          </div>
+        </section>
+      </div>
+      <div class="about-wrapper">
+        <section id="about">
+          <h2>About Me:</h2>
           <p>
-            I have a solid foundation as a web developer, with hands-on
-            experience using the full web development stack. I am comfortable
-            working with both front-end and back-end technologies and familiar
-            with modern frameworks used in real-world projects. I enjoy building
-            responsive, functional web applications and continuously improving
-            my skills through practice and learning. I also have some practical
-            experience that helps me understand how to structure projects and
-            solve problems efficiently.
+            I’m currently living in Sicily, where I’ve been working as a farmer
+            while building a new path for myself through technology. I’m
+            passionate about programming, especially Javascript and relative
+            libraries and framework, and I aspire to become a skilled software
+            developer. Beyond technology, I’m deeply interested in history,
+            economics, which shape the way I understand society and the world
+            around me. I value learning, discipline, and the idea of improving
+            my future through knowledge and hard work.
           </p>
-        </div>
-      </section>
-      <section id="about">
-        <h2>About Me:</h2>
-        <p>
-          I’m currently living in Sicily, where I’ve been working as a farmer
-          while building a new path for myself through technology. I’m
-          passionate about programming, especially Javascript and relative
-          libraries and framework, and I aspire to become a skilled software
-          developer. Beyond technology, I’m deeply interested in history,
-          economics, which shape the way I understand society and the world
-          around me. I value learning, discipline, and the idea of improving my
-          future through knowledge and hard work.
-        </p>
-      </section>
-      <section id="project">
-        <div class="proj-card">
-          <div class="proj-img-wrap">
-            <img src="./assets/img/lazy-2048.png" alt="lazy 2048 game" />
+        </section>
+      </div>
+      <div class="project-wrapper">
+        <section id="project">
+          <div class="proj-card">
+            <div class="proj-img-wrap">
+              <img src="./assets/img/lazy-2048.png" alt="lazy 2048 game" />
+            </div>
+            <div class="proj-info">
+              <h2>Project 1</h2>
+              <div class="proj-divider"></div>
+              <h3>Lazy 2048</h3>
+              <p>
+                &laquo;<span>Lazy 2048 </span>is a physics-based
+                reinterpretation of the classic 2048 puzzle game, built with
+                vanilla JavaScript (ES6 modules). Players can drag, fling, and
+                merge tiles freely — or simply watch the system evolve on its
+                own.&raquo;
+              </p>
+              <a href="https://fradev85.github.io/Lazy-2048/" target="_blank"
+                ><button class="button">Live Preview</button></a
+              >
+            </div>
           </div>
-          <div class="proj-info">
-            <h2>Project 1</h2>
-            <div class="proj-divider"></div>
-            <h3>Lazy 2048</h3>
-            <p>
-              &laquo;<span>Lazy 2048 </span>is a physics-based reinterpretation
-              of the classic 2048 puzzle game, built with vanilla JavaScript
-              (ES6 modules). Players can drag, fling, and merge tiles freely —
-              or simply watch the system evolve on its own.&raquo;
-            </p>
-            <a href="https://fradev85.github.io/Lazy-2048/" target="_blank"
-              ><button class="button">Live Preview</button></a
+
+          <div class="proj-card proj-card--reverse">
+            <div class="proj-img-wrap">
+              <img src="./assets/img/rp.png" alt="rubber and Pomodoro" />
+            </div>
+            <div class="proj-info">
+              <h2>Project 2</h2>
+              <div class="proj-divider"></div>
+              <h3>Pomodoro & Duck</h3>
+              <p>
+                &laquo;<span>Pomodoro & Duck </span>is a minimalist productivity
+                web app that combines the Pomodoro Technique with Rubber Duck
+                Debugging. Features animated focus timers, customizable themes,
+                synthesized sound effects via the WebAudio API — all without
+                external dependencies.&raquo;
+              </p>
+              <a
+                href="https://fradev85.github.io/Pomodoro_rubber_duck/"
+                target="_blank"
+                ><button class="button">Live Preview</button></a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="skills-wrapper">
+        <section id="skills">
+          <h1>Skills:</h1>
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./assets/img/html.png"
+                  class="d-block w-100"
+                  alt="html logo"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/960px-JavaScript-logo.png"
+                  class="d-block w-100"
+                  alt="js logo"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/css.webp"
+                  class="d-block w-100"
+                  alt="css logo"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/Node.js_logo.svg.png"
+                  class="d-block w-100"
+                  alt="Node.js logo"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/React-icon.svg.png"
+                  class="d-block w-100"
+                  alt="React logo"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
             >
-          </div>
-        </div>
-
-        <div class="proj-card proj-card--reverse">
-          <div class="proj-img-wrap">
-            <img src="./assets/img/rp.png" alt="rubber and Pomodoro" />
-          </div>
-          <div class="proj-info">
-            <h2>Project 2</h2>
-            <div class="proj-divider"></div>
-            <h3>Pomodoro & Duck</h3>
-            <p>
-              &laquo;<span>Pomodoro & Duck </span>is a minimalist productivity
-              web app that combines the Pomodoro Technique with Rubber Duck
-              Debugging. Features animated focus timers, customizable themes,
-              synthesized sound effects via the WebAudio API — all without
-              external dependencies.&raquo;
-            </p>
-            <a
-              href="https://fradev85.github.io/Pomodoro_rubber_duck/"
-              target="_blank"
-              ><button class="button">Live Preview</button></a
-            >
-          </div>
-        </div>
-      </section>
-      <section id="skills">
-        <h1>Skills:</h1>
-        <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="4"
-              aria-label="Slide 5"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="./assets/img/html.png"
-                class="d-block w-100"
-                alt="html logo"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/960px-JavaScript-logo.png"
-                class="d-block w-100"
-                alt="js logo"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./assets/img/css.webp"
-                class="d-block w-100"
-                alt="css logo"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./assets/img/Node.js_logo.svg.png"
-                class="d-block w-100"
-                alt="Node.js logo"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./assets/img/React-icon.svg.png"
-                class="d-block w-100"
-                alt="React logo"
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-      <section id="contact">
-        <h2>Hi, drop a message:</h2>
-        <form
-          class="contact-form"
-          action="https://api.web3forms.com/submit"
-          method="POST"
-          id="contactForm"
-        >
-          <!-- Replace with your Web3Forms access key from web3forms.com -->
-          <input
-            type="hidden"
-            name="access_key"
-            value="845608cd-d838-47d8-872e-474cc4d4d5cc"
-          />
-          <input
-            type="hidden"
-            name="subject"
-            value="New message from portfolio"
-          />
-          <input
-            type="hidden"
-            name="redirect"
-            value="https://web3forms.com/success"
-          />
-
-          <div class="contact-field">
-            <label for="name">Name: </label>
-            <div class="contact-input-wrap">
-              <i class="fa-solid fa-user"></i>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your name"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="contact-field">
-            <label for="email">Email: </label>
-            <div class="contact-input-wrap">
-              <i class="fa-solid fa-envelope"></i>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="your@email.com"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="contact-field">
-            <label for="message">Message: </label>
-            <div class="contact-input-wrap contact-textarea-wrap">
-              <i class="fa-solid fa-message"></i>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Tell me about your project..."
-                rows="10"
-                required
-              ></textarea>
-            </div>
-          </div>
-          <div class="submit-container">
-            <button type="submit" class="contact-submit">
-              <span class="contact-submit-text">Send Message</span>
-              <i class="fa-solid fa-paper-plane contact-submit-icon"></i>
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
             </button>
-            <input
-              type="checkbox"
-              name="botcheck"
-              style="display: none !important"
-              tabindex="-1"
-              autocomplete="off"
-            />
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <p class="contact-privacy">
-            <i class="fa-solid fa-shield-halved"></i>
-            Protected by hCaptcha — no spam, ever.
-          </p>
-          <!-- hCaptcha anti-spam -->
-        </form>
-      </section>
+        </section>
+      </div>
+      <div class="contact-wrapper">
+        <section id="contact">
+          <h2>Hi, drop a message:</h2>
+          <form
+            class="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            id="contactForm"
+          >
+            <!-- Replace with your Web3Forms access key from web3forms.com -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="845608cd-d838-47d8-872e-474cc4d4d5cc"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New message from portfolio"
+            />
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+
+            <div class="contact-field">
+              <label for="name">Name: </label>
+              <div class="contact-input-wrap">
+                <i class="fa-solid fa-user"></i>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="contact-field">
+              <label for="email">Email: </label>
+              <div class="contact-input-wrap">
+                <i class="fa-solid fa-envelope"></i>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="contact-field">
+              <label for="message">Message: </label>
+              <div class="contact-input-wrap contact-textarea-wrap">
+                <i class="fa-solid fa-message"></i>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell me about your project..."
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="submit-container">
+              <button type="submit" class="contact-submit">
+                <span class="contact-submit-text">Send Message</span>
+                <i class="fa-solid fa-paper-plane contact-submit-icon"></i>
+              </button>
+              <input
+                type="checkbox"
+                name="botcheck"
+                style="display: none !important"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+            <p class="contact-privacy">
+              <i class="fa-solid fa-shield-halved"></i>
+              Protected by hCaptcha — no spam, ever.
+            </p>
+            <!-- hCaptcha anti-spam -->
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="footer-wrapper">
       <div class="footer-icons">

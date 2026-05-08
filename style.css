@@ -71,7 +71,6 @@ nav a:hover::after {
 }
 .main-wrapper {
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -142,11 +141,15 @@ nav a:hover::after {
   font-family: "roboto";
 }
 /* ===== PROJECT SECTION ===== */
-#project {
+.project-wrapper {
+  width: 100%;
   background-color: rgb(180, 60, 84);
+}
+#project {
   width: 100%;
   padding: 3rem 5%;
   box-sizing: border-box;
+  max-width: 1920px;
 }
 
 .proj-card {
@@ -375,10 +378,14 @@ nav a:hover::after {
   letter-spacing: 1px;
 }
 /* ===== CONTACT ===== */
+.contact-wrapper {
+  width: 100%;
+  background-color: rgb(184, 48, 71);
+}
 #contact {
   width: 100%;
   display: block;
-  background-color: rgb(184, 48, 71);
+  max-width: 1920px;
   padding: 2rem 3rem;
   border: 1px solid black;
 }
@@ -485,6 +492,11 @@ form {
   .proj-info h3 {
     font-size: 1.3rem;
   }
+  /* skills*/
+  .carousel-control-next,
+  .carousel-control-prev {
+    display: none;
+  }
   /*Contact*/
   #contact {
     padding: 15px 30px;
@@ -507,6 +519,10 @@ form {
 
 /* ===== BREAKPOINT 4K (≥2560px) ===== */
 @media (min-width: 2160px) {
+  body {
+    display: block;
+    margin: 0 auto;
+  }
   header#main-header {
     margin-bottom: 1rem;
   }
@@ -516,8 +532,20 @@ form {
     top: 1rem;
     z-index: 100;
     margin-bottom: 2rem;
+    text-align: center;
   }
 
+  .home-wrapper,
+  .project-wrapper,
+  .skills-wrapper,
+  .about-wrapper,
+  .contact-wrapper,
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   #home {
     min-height: auto;
     padding: 6rem 0 4rem;
@@ -527,10 +555,6 @@ form {
   #about {
     margin: 0 15% 3rem 15%;
     padding-top: 3rem;
-  }
-
-  .main-wrapper {
-    max-width: 2400px;
   }
 
   #home .text h3 {
